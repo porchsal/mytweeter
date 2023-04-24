@@ -1,0 +1,37 @@
+nav {
+    display: flex;
+    height: 100px;
+    background-color: #4056A1;
+    color: #FFFFFF;
+    padding: 1.5em;
+    align-self: center;
+    
+    justify-content: space-between;
+    flex-grow: 2;
+    
+}
+
+.logo {
+   
+    font-size: 1.75em;
+    font-family: 'Bungee', sans-serif;
+    flex: 2;
+    
+}
+.write-tweet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+    flex: 3;
+}
+
+.write-new-tweet {
+    font-family: sans-serif;
+    align-content: flex-start;
+}
+.i {
+    display: flex;
+    align-content: center;
+}
+

@@ -3,6 +3,11 @@ $(document).ready(function() {
         const text = $(this).val();
         const textCount = text.length;
         const textRemain = 140 - textCount;
-        $('.counter').html(textRemain);
+        
+        if (textRemain < 0) {
+            $('.counter').html(textRemain).css('color', 'red');
+        } else {
+            $('.counter').html(textRemain).css('color', 'black');
+        }
     });
   });

@@ -34,8 +34,50 @@ body {
   align-items: center;
   background-color: #f4f1ec;
 }
+.icons {
+  display: flex;
+  align-items: center;
+  color: blue;
+  flex-wrap: wrap;
 
+}
+i:hover {
+  color: yellowgreen;
+}
+.tweet-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+} 
 
+.tweet-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+}
 
-
+.tweet-footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+.tweet {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around ;
+}
+.tweet-body {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  margin-left: 10%;
+  
+  
+}

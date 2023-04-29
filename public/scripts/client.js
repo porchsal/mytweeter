@@ -67,8 +67,10 @@ $( document ).ready(function() {
           success: function(){
             // $(this).find("#tweet-text").val();
             // $(this).find(".counter").val();
-            inputText;
-            inputCounter;
+            //inputText;
+            //inputCounter;
+            $("#tweet-text").val("");
+            $(".counter").val(maxChar);
             loadTweets();
           }
 

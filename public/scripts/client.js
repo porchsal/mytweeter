@@ -8,7 +8,17 @@
 const data = [];
 $( document ).ready(function() {
 
-//  creates tweet element
+//escape function to secure page and avoid injection
+const escape = function(str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
+
+
+
+  //  creates tweet element and uses escape function
   const createTweetElement = function(tweetData) {
     const $tweet = `
         <article class="tweet">
@@ -17,7 +27,7 @@ $( document ).ready(function() {
               <h3>${tweetData.user.handle}</h3>
             </header>
             <section class="tweet-body">
-              <p>${tweetData.content.text}</p>
+              <p>${escape(tweetData.content.text)}</p>
             </section>
             <footer class="tweet-footer-container">
               <p class="time-created">${timeago.format(tweetData.created_at)}</p>

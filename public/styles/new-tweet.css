@@ -33,7 +33,7 @@ section.new-tweet {
     background-color: #f4f1ec;
     border: hidden;
     border-bottom: 3px solid black;
-
+    height: 125px;
 }
 
 .tweet-footer {
@@ -43,4 +43,10 @@ section.new-tweet {
     font-family: 'Bungee', sans-serif;
     font-size: 24px;
     margin-top: 5px;
+}
+
+.error-message {
+  padding: 2px;
+  border: #162966;
+  background-color: khaki;
 }

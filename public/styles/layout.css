@@ -70,6 +70,7 @@ i:hover {
   flex-direction: column;
   align-content: center;
   justify-content: space-around ;
+  padding: 1%;
 }
 .tweet-body {
   display: flex;

@@ -26,6 +26,7 @@ form {
 section.new-tweet {
     display: flex;
     align-items: center;
+    padding: 5px;
   }
 
 #tweet-text {

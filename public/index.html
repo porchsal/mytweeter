@@ -53,6 +53,16 @@
     <main class="container"></main>
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
+      <span id="error-message-empty" class="error-message">
+        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+        Can't post an empty Tweet!
+        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+      </span>
+      <span id="error-message-long" class="error-message">
+        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+        Tweet too long, please use less than 140 characters
+        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+      </span>
       <form action="/tweets" method="POST"  id="tweet-target">
         <!-- <label for="tweet-text">Write a tweet</label> -->
         <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>

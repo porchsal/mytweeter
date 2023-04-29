@@ -8,12 +8,17 @@
 const data = [];
 $( document ).ready(function() {
 
-//escape function to secure page and avoid injection
-const escape = function(str) {
-  let div = document.createElement("div");
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
-}
+
+  $("#error-message-empty").hide();
+  $("#error-message-long").hide();
+
+
+  //escape function to secure page and avoid injection
+  function escape(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
 
 
 
@@ -63,11 +68,14 @@ const escape = function(str) {
       const maxChar = 140;
       const inputCounter = $(this).find(".counter").val(); 
       const inputText =  $(this).find("#tweet-text").val();
-      
+      $("#error-message-empty").slideUp("slow");
+      $("#error-message-tooLong").slideUp("slow");
       if( !inputText ){
-        alert("Tweet empty");
+        $("#error-message-empty").slideDown("slow");
+        $("#error-message-long").hide();
       } else if (inputCounter < 0) {
-        alert("Tweet too long, 140 characters max");
+        $("#error-message-empty").hide();
+        $("#error-message-long").slideDown("slow");
       } else {
         const formTweet = $(this).serialize();
         $.ajax({

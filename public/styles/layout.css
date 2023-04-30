@@ -17,14 +17,6 @@ html {
  * Global layout stuff
  */
 
-header {
-  display: flex;
-  height: 400px;
-  align-content: center;
-  
-
-}
-
  body {
   display: flex;
   color: #545149;

@@ -31,48 +31,51 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span class="logo">Tweeter</span>
-      <div class="write-tweet"> 
-        <span class="write-new-tweet"><strong>Write</strong> a new Tweet</span>
-        <i class="fa-solid fa-angles-down" style= "color: red"></i>
-      </div>
-      
-    </nav>
-    <header>
-      <div class="background">
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Your Name</h2>
-      </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
-    <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <span id="error-message-empty" class="error-message">
-        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
-        Can't post an empty Tweet!
-        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
-      </span>
-      <span id="error-message-long" class="error-message">
-        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
-        Tweet too long, please use less than 140 characters
-        <i class="fas fa-exclamation-triangle" style= "color: red"></i>
-      </span>
-      <form action="/tweets" method="POST"  id="tweet-target">
-        <!-- <label for="tweet-text">Write a tweet</label> -->
-        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-        <div class="tweet-footer">
-          <button id="submit "type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
     
-    <section id="tweets-container"></section>
+      <nav>
+        <span class="logo">Tweeter</span>
+        <div class="write-tweet"> 
+          <span class="write-new-tweet"><strong>Write</strong> a new Tweet</span>
+          <i class="fa-solid fa-angles-down" style= "color: red">         </i>
+        </div>
+      </nav>
+    <article id="layout"> 
+      <header id="user-profile">
+        <div class="background">
+            <img src="/images/profile-hex.png"> 
+        </div>
+        <br>
+        <div>
+            <h2>Your Name</h2>
+        </div>
+      </header>
+      
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <span id="error-message-empty" class="error-message">
+            <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+            Can't post an empty Tweet!
+            <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+          </span>
+          <span id="error-message-long" class="error-message">
+            <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+            Tweet too long, please use less than 140 characters
+            <i class="fas fa-exclamation-triangle" style= "color: red"></i>
+          </span>
+          <form action="/tweets" method="POST"  id="tweet-target">
+            <!-- <label for="tweet-text">Write a tweet</label> -->
+            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            <div class="tweet-footer">
+              <button id="submit "type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        
+        <section id="tweets-container"></section>
+      </main>
+    </article> 
   </body>
 </html>

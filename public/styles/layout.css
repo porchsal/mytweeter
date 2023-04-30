@@ -17,22 +17,40 @@ html {
  * Global layout stuff
  */
 
-body {
+header {
+  display: flex;
+  height: 400px;
+  align-content: center;
+  
+
+}
+
+ body {
+  display: flex;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro';
+  flex-direction: column;  
+
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+#user-profile{
+  background-color: #f0a834;
+}
+
+
 .container {
   display: flex;
+  flex-direction: column;
   width: 90%;
   align-items: center;
   background-color: #f4f1ec;
+  padding-top: 20px;
 }
 .icons {
   display: flex;
@@ -74,10 +92,31 @@ i:hover {
 }
 .tweet-body {
   display: flex;
-  width: 80%;
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid black;
   margin-left: 10%;
 
-}  
+} 
+
+@media only screen and (min-width: 1024px)  {
+
+.container{
+  align-items: center;
+  
+  align-content: flex-start;
+}
+
+#layout {
+  display: flex;
+  flex-direction: row;
+  align-content: center  ;
+}
+
+body {
+  
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+}

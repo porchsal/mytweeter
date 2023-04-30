@@ -1,14 +1,15 @@
 nav {
     display: flex;
-    height: 100px;
+    height: 120px;
+    width: 100%;
     background-color: #4056A1;
     color: #FFFFFF;
     padding: 1.5em;
     align-self: center;
-    
     justify-content: space-between;
     flex-grow: 2;
-    
+    position: fixed;
+    top: 0px;
 }
 
 .logo {
@@ -22,7 +23,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    align-self: center;
+    justify-content: space-around ;
     flex: 3;
 }
 
@@ -32,6 +33,10 @@ nav {
 }
 .i {
     display: flex;
-    align-content: center;
+   justify-content: center;
 }
 
+@media only screen and (min-width: 1024px)  {
+
+
+}

@@ -23,13 +23,13 @@ App was built with HTML, CSS, JS, jQuery, AJAX, as well as Node and Express. Twe
 
 ## Main Screen
 
-![image](https://user-images.githubusercontent.com/36705663/235833609-f7d15800-466e-4d6b-bde9-399b163936af.png)
+![image](https://user-images.githubusercontent.com/36705663/235833673-180538f4-8291-41f9-a37d-9167a877b3d7.png)
 
 ## ALERTS
 
-![image](https://user-images.githubusercontent.com/36705663/235380051-42270026-eecb-4aae-89f6-0b5f1dafce2a.png)
+![image](https://user-images.githubusercontent.com/36705663/235833697-59d2c04a-b269-499e-b031-64a251c5e2e0.png)
 
-![image](https://user-images.githubusercontent.com/36705663/235380072-f6d7c852-6324-4a42-83e1-50348e87019c.png)
+![image](https://user-images.githubusercontent.com/36705663/235833788-d5b6d400-b29e-41d3-84b3-5dc012f5455c.png)
 
 ## Responsive Design
 

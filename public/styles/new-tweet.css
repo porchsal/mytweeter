@@ -35,9 +35,7 @@ section.new-tweet {
     background-color: #f4f1ec;
     border: hidden;
     border-bottom: 3px solid black;
-    height: 125px;
-    
-    
+    height: 100px;
 }
 
 .tweet-footer {

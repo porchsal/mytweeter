@@ -33,16 +33,19 @@ html {
 
 #user-profile{
   background-color: #f0a834;
+  width: 100%;
+  margin-top: 150px;
 }
 
 
-.container {
+#tweets-container {
   display: flex;
-  flex-direction: column;
   width: 90%;
-  align-items: center;
+  align-content: center;
   background-color: #f4f1ec;
-  padding-top: 20px;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 1.5em;
 }
 .icons {
   display: flex;
@@ -54,12 +57,6 @@ html {
 i:hover {
   color: yellowgreen;
 }
-.tweet-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-} 
 
 .tweet-header {
   display: flex;
@@ -80,29 +77,36 @@ i:hover {
   flex-direction: column;
   align-content: center;
   justify-content: space-around ;
-  padding: 1%;
+  width: 850px;
 }
 .tweet-body {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 1px solid black;
-  margin-left: 10%;
-
+  margin: 5%;
 } 
+
+.tweet:hover {
+  box-shadow: 10px 10px #C8C8C8;
+}
 
 @media only screen and (min-width: 1024px)  {
 
-.container{
-  align-items: center;
-  
-  align-content: flex-start;
+#user-profile{
+  display: flex;
+  justify-content: center;
+  margin-top: 175px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 600px;
 }
+  
 
 #layout {
   display: flex;
   flex-direction: row;
-  align-content: center  ;
+  align-content:space-between;
 }
 
 body {

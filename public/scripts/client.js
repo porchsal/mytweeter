@@ -5,13 +5,10 @@
  */
 
 // Fake data taken from initial-tweets.json
-const data = [];
 $( document ).ready(function() {
-
 
   $("#error-message-empty").hide();
   $("#error-message-long").hide();
-
 
   //escape function to secure page and avoid injection
   function escape(str) {
@@ -19,9 +16,6 @@ $( document ).ready(function() {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   }
-
-
-
 
   //  creates tweet element and uses escape function
   const createTweetElement = function(tweetData) {
@@ -91,14 +85,9 @@ $( document ).ready(function() {
             $(".counter").val(maxChar);
             loadTweets();
           }
-
         })
-           
       }
-      
-    
     });
-
 
   loadTweets();
 });

@@ -27,7 +27,7 @@ App was built with HTML, CSS, JS, jQuery, AJAX, as well as Node and Express. Twe
 
 ## ALERTS
 
-![image](https://user-images.githubusercontent.com/36705663/235833697-59d2c04a-b269-499e-b031-64a251c5e2e0.png)
+![image](https://user-images.githubusercontent.com/36705663/235833877-b5663461-e50c-491b-b058-8c95784a2fa7.png)
 
 ![image](https://user-images.githubusercontent.com/36705663/235833788-d5b6d400-b29e-41d3-84b3-5dc012f5455c.png)
 

@@ -34,10 +34,13 @@ html {
 #user-profile{
   background-color: #f0a834;
   width: 100%;
+  height: 80%;
   margin-top: 150px;
 }
 
-
+.container {
+  margin-top: 50px;
+}
 #tweets-container {
   display: flex;
   width: 90%;
@@ -99,6 +102,7 @@ i:hover {
   margin-top: 175px;
   margin-left: 50px;
   margin-right: 50px;
+  height: 650px;
   width: 600px;
 }
   

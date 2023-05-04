@@ -43,12 +43,12 @@ html {
 }
 #tweets-container {
   display: flex;
-  width: 90%;
   align-content: center;
   background-color: #f4f1ec;
   flex-direction: column;
   row-gap: 15px;
   padding: 1.5em;
+  max-width: 800px;
 }
 .icons {
   display: flex;
@@ -80,7 +80,7 @@ i:hover {
   flex-direction: column;
   align-content: center;
   justify-content: space-around ;
-  width: 850px;
+  
 }
 .tweet-body {
   display: flex;
@@ -109,8 +109,11 @@ i:hover {
 
 #layout {
   display: flex;
+  width: 90%;
   flex-direction: row;
   align-content:space-between;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 body {
